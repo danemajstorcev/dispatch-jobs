@@ -56,10 +56,8 @@ export default function JobPage({ params }: Props) {
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-8">
 
-          {/* Main */}
           <div className="space-y-4">
 
-            {/* Header card */}
             <div className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
               <div className="flex items-start gap-4 mb-5">
                 <div className="w-14 h-14 rounded-xl bg-slate-100 flex items-center justify-center text-sm font-bold text-slate-600 flex-shrink-0">
@@ -106,7 +104,6 @@ export default function JobPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Apply button — mobile only, shown above description */}
             <div className="lg:hidden">
               <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
                 <div className="text-center mb-3">
@@ -117,13 +114,11 @@ export default function JobPage({ params }: Props) {
               </div>
             </div>
 
-            {/* Description */}
             <div className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
               <h2 className="font-display font-bold text-lg text-slate-900 mb-3">About the Role</h2>
               <p className="text-slate-600 text-sm leading-relaxed">{job.description}</p>
             </div>
 
-            {/* Responsibilities */}
             <div className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
               <h2 className="font-display font-bold text-lg text-slate-900 mb-3">Responsibilities</h2>
               <ul className="space-y-2.5">
@@ -136,7 +131,6 @@ export default function JobPage({ params }: Props) {
               </ul>
             </div>
 
-            {/* Requirements */}
             <div className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
               <h2 className="font-display font-bold text-lg text-slate-900 mb-3">Requirements</h2>
               <ul className="space-y-2.5">
@@ -149,7 +143,6 @@ export default function JobPage({ params }: Props) {
               </ul>
             </div>
 
-            {/* Benefits */}
             <div className="bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm">
               <h2 className="font-display font-bold text-lg text-slate-900 mb-3">Benefits &amp; Perks</h2>
               <ul className="space-y-2.5">
@@ -164,7 +157,6 @@ export default function JobPage({ params }: Props) {
 
           </div>
 
-          {/* Sidebar — desktop only */}
           <aside className="hidden lg:block space-y-4">
             <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm sticky top-20">
               <div className="text-center mb-4">

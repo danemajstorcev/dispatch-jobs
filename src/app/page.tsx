@@ -32,7 +32,6 @@ export default function HomePage() {
       <Header />
       <main>
 
-        {/* Hero */}
         <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 sm:py-20 lg:py-24">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="inline-flex items-center gap-2 bg-brand-500/10 border border-brand-500/20 rounded-full px-4 py-1.5 mb-6">
@@ -51,7 +50,6 @@ export default function HomePage() {
               The only job board built for freight dispatchers, logistics coordinators, and supply chain professionals. Remote, hybrid, and on-site roles — all in one place.
             </p>
 
-            {/* Stats */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-2xl mx-auto">
               {STATS.map((s) => (
                 <div key={s.label} className="text-center">
@@ -63,7 +61,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Categories */}
         <section id="categories" className="bg-slate-50 border-b border-slate-200 py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center gap-4 overflow-x-auto pb-2 scrollbar-hide">
@@ -84,7 +81,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Job listings */}
         <section className="py-8 sm:py-10 lg:py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-baseline justify-between mb-6">
@@ -97,7 +93,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* CTA */}
         <section className="bg-brand-600 py-12 sm:py-16">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
             <h2 className="font-display font-bold text-2xl sm:text-3xl text-white mb-3">

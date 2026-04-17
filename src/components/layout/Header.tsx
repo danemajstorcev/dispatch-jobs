@@ -12,7 +12,6 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
 
-          {/* Logo */}
           <Link href="/" className="flex items-center gap-2 flex-shrink-0">
             <div className="w-8 h-8 bg-brand-600 rounded-lg flex items-center justify-center">
               <span className="text-white text-sm font-bold">D</span>
@@ -22,7 +21,6 @@ export default function Header() {
             </span>
           </Link>
 
-          {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-6">
             <Link href="/" className="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors">
               Browse Jobs
@@ -32,7 +30,6 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Auth — desktop */}
           <div className="hidden md:flex items-center gap-3">
             {session ? (
               <div className="flex items-center gap-3">
@@ -64,7 +61,6 @@ export default function Header() {
             )}
           </div>
 
-          {/* Mobile hamburger */}
           <button
             className="md:hidden p-2 rounded-lg text-slate-500 hover:text-slate-900 hover:bg-slate-100 transition-colors"
             onClick={() => setMenuOpen((v) => !v)}
@@ -82,7 +78,6 @@ export default function Header() {
           </button>
         </div>
 
-        {/* Mobile menu */}
         {menuOpen && (
           <div className="md:hidden border-t border-slate-200 py-3 space-y-1">
             <Link href="/" className="block px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-50 rounded-lg" onClick={() => setMenuOpen(false)}>

@@ -24,7 +24,6 @@ export default function JobCard({ job }: Props) {
   return (
     <Link href={`/jobs/${job.slug}`} className="block group">
       <article className={`bg-white rounded-xl border transition-all duration-200 p-5 hover:shadow-md hover:-translate-y-0.5 ${job.featured ? 'border-brand-200 shadow-sm' : 'border-slate-200'}`}>
-        {/* Top row */}
         <div className="flex items-start justify-between gap-3 mb-3">
           <div className="flex items-center gap-3 min-w-0">
             <div className="w-10 h-10 rounded-lg bg-slate-100 flex items-center justify-center text-xs font-bold text-slate-600 flex-shrink-0">
@@ -52,7 +51,6 @@ export default function JobCard({ job }: Props) {
           </div>
         </div>
 
-        {/* Meta row */}
         <div className="flex flex-wrap items-center gap-2 mb-3">
           <span className={`inline-flex items-center text-xs font-medium px-2.5 py-1 rounded-full border ${workModeStyle[job.workMode] ?? 'bg-slate-100 text-slate-600 border-slate-200'}`}>
             {job.workMode === 'Remote' && '🌐 '}{job.workMode}
@@ -64,7 +62,6 @@ export default function JobCard({ job }: Props) {
           <span className="text-xs text-slate-500">· {job.type}</span>
         </div>
 
-        {/* Salary + tags */}
         <div className="flex items-center justify-between gap-2 flex-wrap">
           <div className="flex flex-wrap gap-1.5">
             {job.tags.slice(0, 3).map((tag) => (

@@ -38,7 +38,6 @@ export default function JobFilters({ onFiltersChange, totalJobs, filteredCount }
   return (
     <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
 
-      {/* Search */}
       <div className="mb-5">
         <div className="relative">
           <svg className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -54,7 +53,6 @@ export default function JobFilters({ onFiltersChange, totalJobs, filteredCount }
         </div>
       </div>
 
-      {/* Work Mode */}
       <div className="mb-5">
         <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Work Mode</label>
         <div className="flex flex-wrap gap-2">
@@ -74,7 +72,6 @@ export default function JobFilters({ onFiltersChange, totalJobs, filteredCount }
         </div>
       </div>
 
-      {/* Experience */}
       <div className="mb-5">
         <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Experience</label>
         <div className="flex flex-wrap gap-2">
@@ -94,7 +91,6 @@ export default function JobFilters({ onFiltersChange, totalJobs, filteredCount }
         </div>
       </div>
 
-      {/* Salary */}
       <div className="mb-5">
         <label className="block text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">Min Salary</label>
         <div className="flex flex-wrap gap-2">
@@ -116,7 +112,6 @@ export default function JobFilters({ onFiltersChange, totalJobs, filteredCount }
         </div>
       </div>
 
-      {/* Results count + clear */}
       <div className="flex items-center justify-between pt-4 border-t border-slate-100">
         <span className="text-xs text-slate-500">
           <span className="font-semibold text-slate-900">{filteredCount}</span> of {totalJobs} jobs

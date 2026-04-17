@@ -27,7 +27,6 @@ export default function JobList({ jobs }: Props) {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-6 xl:gap-8">
 
-      {/* Filters sidebar */}
       <aside className="lg:sticky lg:top-20 lg:self-start">
         <JobFiltersPanel
           onFiltersChange={setFilters}
@@ -36,7 +35,6 @@ export default function JobList({ jobs }: Props) {
         />
       </aside>
 
-      {/* Job listing */}
       <div>
         {filtered.length === 0 ? (
           <div className="text-center py-20 bg-white rounded-xl border border-slate-200">

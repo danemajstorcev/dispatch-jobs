@@ -26,7 +26,6 @@ export default function SignInPage() {
 
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col">
-      {/* Minimal header */}
       <header className="bg-white border-b border-slate-200 px-4 py-4">
         <Link href="/" className="flex items-center gap-2 w-fit">
           <div className="w-7 h-7 bg-brand-600 rounded-lg flex items-center justify-center">
@@ -45,7 +44,6 @@ export default function SignInPage() {
 
           <div className="bg-white border border-slate-200 rounded-2xl p-6 sm:p-8 shadow-sm">
 
-            {/* Demo hint */}
             <div className="bg-brand-50 border border-brand-200 rounded-xl p-4 mb-6">
               <p className="text-xs font-semibold text-brand-700 mb-1">Demo credentials</p>
               <p className="text-xs text-brand-600 font-mono">alex@example.com / demo1234</p>
