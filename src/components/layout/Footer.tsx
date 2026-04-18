@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -10,27 +10,58 @@ export default function Footer() {
               <div className="w-7 h-7 bg-brand-600 rounded-md flex items-center justify-center">
                 <span className="text-white text-xs font-bold">D</span>
               </div>
-              <span className="font-display font-bold text-white text-base">DispatchBoard</span>
+              <span className="font-display font-bold text-white text-base">
+                DispatchBoard
+              </span>
             </div>
             <p className="text-sm leading-relaxed">
-              The #1 job board for freight dispatchers, logistics coordinators, and supply chain professionals.
+              The #1 job board for freight dispatchers, logistics coordinators,
+              and supply chain professionals.
             </p>
           </div>
 
           <div>
-            <h3 className="text-white text-sm font-semibold mb-3">For Job Seekers</h3>
+            <h3 className="text-white text-sm font-semibold mb-3">
+              For Job Seekers
+            </h3>
             <ul className="space-y-2">
-              {['Browse Jobs', 'Remote Jobs', 'Senior Roles', 'Entry Level'].map((l) => (
-                <li key={l}><Link href="/" className="text-sm hover:text-white transition-colors">{l}</Link></li>
+              {[
+                "Browse Jobs",
+                "Remote Jobs",
+                "Senior Roles",
+                "Entry Level",
+              ].map((l) => (
+                <li key={l}>
+                  <Link
+                    href="/"
+                    className="text-sm hover:text-white transition-colors"
+                  >
+                    {l}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="text-white text-sm font-semibold mb-3">For Employers</h3>
+            <h3 className="text-white text-sm font-semibold mb-3">
+              For Employers
+            </h3>
             <ul className="space-y-2">
-              {['Post a Job', 'Pricing', 'Employer Login', 'Hiring Resources'].map((l) => (
-                <li key={l}><Link href="/auth/signin" className="text-sm hover:text-white transition-colors">{l}</Link></li>
+              {[
+                "Post a Job",
+                "Pricing",
+                "Employer Login",
+                "Hiring Resources",
+              ].map((l) => (
+                <li key={l}>
+                  <Link
+                    href="/auth/signin"
+                    className="text-sm hover:text-white transition-colors"
+                  >
+                    {l}
+                  </Link>
+                </li>
               ))}
             </ul>
           </div>
@@ -38,9 +69,18 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-sm font-semibold mb-3">Company</h3>
             <ul className="space-y-2">
-              {['About', 'Blog', 'Privacy Policy', 'Terms of Service'].map((l) => (
-                <li key={l}><Link href="/" className="text-sm hover:text-white transition-colors">{l}</Link></li>
-              ))}
+              {["About", "Blog", "Privacy Policy", "Terms of Service"].map(
+                (l) => (
+                  <li key={l}>
+                    <Link
+                      href="/"
+                      className="text-sm hover:text-white transition-colors"
+                    >
+                      {l}
+                    </Link>
+                  </li>
+                ),
+              )}
             </ul>
           </div>
         </div>
